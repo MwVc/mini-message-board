@@ -9,11 +9,12 @@
     <ul>
       <% locals.messages.map((message) => {%>
       <li>
-        <span><%=message.user %></span>
+        <h5><%= message.user %></h5>
         <span>Message: <%= message.text %></span>
         <div>Time: <%= message.added %></div>
       </li>
       <%}) %>
     </ul>
+    <button><a href="/new">New Message</a></button>
   </body>
 </html>
