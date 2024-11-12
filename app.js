@@ -1,10 +1,15 @@
 const express = require("express");
-const app = expres();
-const port = process.env.PORT || 8080;
+const path = require("path");
+const app = express();
+const PORT = process.env.PORT || 8080;
 const indexRouter = require("./routes/indexRouter");
+
+// ejs application properties
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 
 app.use("/", indexRouter);
 
 app.listen(PORT, () => {
-  console.log(`Server running on ${port}`);
+  console.log(`Server running on ${PORT}`);
 });
