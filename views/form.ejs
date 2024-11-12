@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= locals.title %></title>
+  </head>
+  <body>
+    <form action="/new" method="POST">
+      <div>
+        <label for="author-name">Author Name:</label>
+        <input type="text" id="author-name" name="author-name" />
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
