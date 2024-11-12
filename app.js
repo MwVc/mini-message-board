@@ -4,6 +4,8 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 const indexRouter = require("./routes/indexRouter");
 
+app.use(express.urlencoded({ extended: true }));
+
 // ejs application properties
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
