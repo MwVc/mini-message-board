@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "node --watch --env-file=.env app"
   },
   "keywords": [],
   "author": "Victor Mwadime <victormwadime@gmail.com>",
